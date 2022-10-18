@@ -120,8 +120,8 @@ text = 'cъешь ещё этих мягких французских булок
 # run = range(1, 6)
 # numbers = list(run)
 # print(numbers)
-# numbers[0] = 10
-# print(numbers)
+numbers[0] = 10
+print(numbers)
 # for i in numbers:
 #     i*=2
 #     print(i)
