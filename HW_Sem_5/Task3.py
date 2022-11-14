@@ -52,21 +52,21 @@ def check_input(id_player):
 
 
 def check_win():
-    if (a1 == a2 == a3 == 'X' or b1 == b2 == b3 == 'X'
-        or c1 == c2 == c3 == 'X' or a1 == b1 == c1 == 'X'
-        or a2 == b2 == c2 == 'X' or a3 == b3 == c3 == 'X'
-            or a1 == b2 == c3 == 'X' or a3 == b2 == c1 == 'X'):
+    if (a1 == a2 == a3 == id_x or b1 == b2 == b3 == id_x 
+        or c1 == c2 == c3 == id_x or a1 == b1 == c1 == id_x
+        or a2 == b2 == c2 == id_x or a3 == b3 == c3 == id_x
+        or a1 == b2 == c3 == id_x or a3 == b2 == c1 == id_x):
         print('Выиграли крестики!')
         exit()
     if (a1 == a2 == a3 == '0' or b1 == b2 == b3 == '0'
         or c1 == c2 == c3 == '0' or a1 == b1 == c1 == '0'
         or a2 == b2 == c2 == '0' or a3 == b3 == c3 == '0'
-            or a1 == b2 == c3 == '0' or a3 == b2 == c1 == '0'):
+        or a1 == b2 == c3 == '0' or a3 == b2 == c1 == '0'):
         print('Выиграли нолики!')
         exit()
     if count == 9:
         print('Ничья')
-        exit()
+    exit()
 
 
 board()
